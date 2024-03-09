@@ -187,6 +187,7 @@ export default function MapComponent() {
                 google.maps.event.removeListener(clickListener);
             };
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [map, selectedMarkerId]);
     
 
