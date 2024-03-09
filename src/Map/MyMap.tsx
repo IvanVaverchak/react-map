@@ -160,6 +160,7 @@ export default function MapComponent() {
             
             const markerDocRef = doc(db, "quests", markerId);
             updateDoc(markerDocRef, { location: newPosition }).then(() => {
+                setSelectedMarkerId(null);
 
                 setMarkers(prevMarkers => prevMarkers.map(marker => {
                     if (marker.id === markerId) {
