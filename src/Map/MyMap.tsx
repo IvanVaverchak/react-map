@@ -69,7 +69,7 @@ export default function MapComponent() {
                 console.error(error);
             });
         }
-    }, [map, markers]);
+    }, [map]);
 
     useEffect(() => {
         if (map) {
