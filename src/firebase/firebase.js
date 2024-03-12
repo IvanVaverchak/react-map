@@ -8,7 +8,7 @@ export const firebaseConfig = {
     projectId: process.env.React_APP_PROJECT_ID,
     storageBucket: process.env.React_APP_STORAGE_BUCKET,
     messagingSenderId: process.env.React_APP_MS_ID,
-    appId: process.env.React_APP_APPLICATION_ID,
+    appId: 'reactmap-d80ae',
 };
 
 const app = initializeApp(firebaseConfig);
