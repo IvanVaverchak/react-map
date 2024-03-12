@@ -3,12 +3,12 @@ import "firebase/firestore";
 import { initializeApp } from 'firebase/app'
 
 export const firebaseConfig = {
-    apiKey: process.env.React_APP_FIREBASE_KEY,
-    authDomain: process.env.React_APP_AUTH_DOMANIAN,
-    projectId: process.env.React_APP_PROJECT_ID,
-    storageBucket: process.env.React_APP_STORAGE_BUCKET,
-    messagingSenderId: process.env.React_APP_MS_ID,
-    appId: 'reactmap-d80ae',
+    apiKey: process.env.REACT_APP_FIREBASE_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
