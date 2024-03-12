@@ -17,24 +17,6 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '14'
-
-    - name: Install Firebase CLI
-      run: npm install -g firebase-tools@9.23.0
-
-    - name: Authenticate Firebase
-      run: firebase login --interactive
-      env:
-        FIREBASE_TOKEN: ${{ secrets.REACT_APP_FIREBASE_TOKEN }}
-
-
-    - name: Install dependencies
-      run: npm install
-
-    - name: Build
-      run: npm run build
-
-    - name: Set Firebase project
-      run: firebase use --add reactmap-d80ae
       
     - name: Deploy to Firebase
       uses: w9jds/firebase-action@master
