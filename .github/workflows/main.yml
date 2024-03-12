@@ -18,6 +18,9 @@ jobs:
       with:
         node-version: '14'
 
+    - name: Install Firebase CLI
+      run: npm install -g firebase-tools@9.23.0
+
     - name: Install dependencies
       run: npm install
 
