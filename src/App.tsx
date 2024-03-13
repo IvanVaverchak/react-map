@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="App">
-      <Wrapper apiKey={process.env.REACT_APP_GOOGLE_API_KEY || ''} render={render}>
+      <Wrapper apiKey={'AIzaSyDYdwyfIRVALY1RgVca7JMcwFFz7fuVdcQ'} render={render}>
         <MapComponent />
       </Wrapper>
     </div>
